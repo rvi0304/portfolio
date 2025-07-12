@@ -25,36 +25,37 @@
           <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
           <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
+  <!-- Hero Header Section -->
   <header>
-    <div class="container">
-      <h1>Hi, I'm Urvi Mamidala</h1>
-      <p>B.Tech CSE (AIML) | Developer | NSS Volunteer | Creative Thinker</p>
+    <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+      <h1>Hi There! <span role="img">👋</span></h1>
+      <h2>I'M <span style="color:#a855f7">URVI MAMIDALA</span></h2>
+      <h3><span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
     </div>
   </header>
 
-  <!-- Profile -->
-  <section id="profile" class="py-4">
+  <!-- Sections -->
+  <section id="profile" class="py-4 reveal">
     <div class="container">
       <h2>Profile</h2>
-      <p>Energetic and committed B.Tech student majoring in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning. Strongly focused on continuous learning and growth, with a commitment to contributing to impactful developments in the field of AIML.</p>
+      <p>Energetic and committed B.Tech student majoring in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning...</p>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education" class="py-4 bg-light">
+  <section id="education" class="py-4 bg-light reveal">
     <div class="container">
       <h2>Education</h2>
       <p><strong>Gayatri Vidya Parishad College of Engineering</strong>, Visakhapatnam (2022–2024 expected)</p>
       <ul>
         <li>B.Tech in Computer Science with specialization in AIML</li>
-        <li>CGPA: 8.6 (VI/VIII)</li>
+        <li>CGPA: 8.7 (VI/VIII)</li>
       </ul>
       <p><strong>Ascent Jr. College</strong>, Visakhapatnam (2020–2022)</p>
       <ul>
@@ -63,37 +64,72 @@
     </div>
   </section>
 
-  <!-- Internships -->
-  <section id="internships" class="py-4">
+  <section id="internships" class="py-4 reveal">
     <div class="container">
       <h2>Internships</h2>
       <ul>
         <li>Eduskills – Cloud Foundation and Cloud Architecture in AWS (Jul–Aug 2023)</li>
         <li>Eduskills – Google AI-ML Virtual Internship (Jun–Jul 2024)</li>
+        <li>Eduskills – Google Cloud Generative AI (Apr–Jun 2025)</li>
+        <li>Techsonix Employability Program – Portfolio website using HTML, CSS, JS, Bootstrap (Apr–May 2025)</li>
+        <li>Salesforce Virtual Internship – Technical skill development (Jun–Jul 2025, ongoing)</li>
       </ul>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-4 bg-light">
-    <div class="container">
-      <h2>Projects</h2>
-      <h5>Resume Classifier</h5>
-      <p>Developed a machine learning-based resume classification system to categorize resumes based on job roles. The system uses NLP techniques to extract and preprocess text from resumes in PDF and TXT formats.</p>
-      <p><strong>Technologies Used:</strong></p>
-      <ul>
-        <li>Programming Languages: Python, Flask</li>
-        <li>Machine Learning: Scikit-learn, Support Vector Classifier (SVC)</li>
-        <li>Natural Language Processing: NLTK, TfidfVectorizer</li>
-        <li>File Processing: pdfplumber, pdf2image, pytesseract (for OCR)</li>
-        <li>Deployment: Flask API with CORS support</li>
-      </ul>
-      <p>Successfully built an automated system that improves resume categorization efficiency, aiding in faster candidate screening and recruitment processes.</p>
+<section id="projects" class="py-4 bg-light reveal">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card-flip" style="height: 500px;">
+          <div class="card-inner" style="height: 100%;">
+            <div class="card-front p-4" style="height: 100%;">
+              <h4>ResumeIQ</h4>
+              <p>OCR + NLP Resume Analyzer</p>
+            </div>
+            <div class="card-back p-4" style="height: 100%; overflow-y: auto;">
+              <p>Developed ResumeIQ, a web application that automates the process of analyzing and comparing multiple resumes (PDF/TXT) to identify the most relevant candidate for a specific job role. Users can upload up to 10 resumes, which are extracted using OCR-enabled methods. The system then performs keyword-based and fuzzy matching to highlight the best-suited resume, allows downloading it as a PDF, and stores all uploaded files securely in the system.</p>
+              <p><strong>Technologies Used:</strong></p>
+              <ul>
+                <li><strong>Backend:</strong> Python, Flask (with CORS support)</li>
+                <li><strong>Text Extraction OCR:</strong> pdfplumber, pdf2image, pytesseract</li>
+                <li><strong>NLP Matching:</strong> NLTK, TfidfVectorizer, FuzzyWuzzy</li>
+                <li><strong>Functionality:</strong> Multi-resume upload, keyword-based best match selection, view best resume in same page, file saving (uploads folder)</li>
+                <li><strong>Deployment:</strong> Flask API with CORS support</li>
+              </ul>
+              <a href="https://github.com/rvi0304/projectResumeIQ.git" target="_blank" style="color:#000000; font-weight:bold;">GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card-flip" style="height: 500px;">
+          <div class="card-inner" style="height: 100%;">
+            <div class="card-front p-4" style="height: 100%;">
+              <h4>SafeSolo</h4>
+              <p>Emergency SOS Web App</p>
+            </div>
+            <div class="card-back p-4" style="height: 100%; overflow-y: auto;">
+              <p>SafeSolo is a full-stack web application developed to help solo women travelers during emergencies. It includes a real-time SOS button that triggers immediate alerts via SMS and voice calls using Twilio API. The application captures and shares the user's live GPS location to trusted contacts through the Google Maps API. The platform is mobile responsive with a user-friendly UI and secure data handling.</p>
+              <p><strong>Technologies Used:</strong></p>
+              <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Font Awesome</li>
+                <li><strong>Backend:</strong> Python (Flask)</li>
+                <li><strong>APIs:</strong> Google Maps API, Twilio API</li>
+                <li><strong>Database:</strong> SQLite</li>
+              </ul>
+              <a href="https://github.com/rvi0304/SafeSolo-EmergencyApp.git" target="_blank" style="color:#000000; font-weight:bold;">GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+
 
   <!-- Activities -->
-  <section id="activities" class="py-4">
+  <section id="activities" class="py-4 reveal">
     <div class="container">
       <h2>Activities</h2>
       <ul>
@@ -107,31 +143,43 @@
   </section>
 
   <!-- Achievements -->
-  <section id="achievements" class="py-4 bg-light">
+  <section id="achievements" class="py-4 bg-light reveal">
     <div class="container">
       <h2>Achievements</h2>
       <ul>
         <li>First Prize – Inter Branch Throwball Competition (Dec 2023)</li>
         <li>Selected as Creative Head – NSS Unit, GVPCE</li>
+        <li>All India Rank 1832 – NCAT (Naukri Career Aptitude Test), 2025</li>
       </ul>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-4">
+  <section id="skills" class="py-4 reveal">
     <div class="container">
       <h2>Skills</h2>
       <ul>
         <li><strong>Languages:</strong> Telugu, English, Hindi</li>
         <li><strong>Programming:</strong> Python, C++, C</li>
-        <li><strong>Web:</strong> HTML, CSS</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
         <li><strong>Database:</strong> SQL</li>
+        <li><strong>Tools:</strong> Blender (Basic)</li>
       </ul>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-4 bg-light">
+  <!-- New: Hobbies -->
+  <section id="hobbies" class="py-4 bg-light  reveal">
+    <div class="container">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Listening to music</li>
+        <li>Playing Handball</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="py-4 bg-light reveal">
     <div class="container">
       <h2>Contact</h2>
       <p><strong>Phone:</strong> +91 807-4975-115</p>
@@ -140,12 +188,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Urvi Mamidala | Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  </body>
+  </html>
