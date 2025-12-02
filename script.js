@@ -1,5 +1,5 @@
 // Welcome log
-console.log("👋 Welcome to Urvi Mamidala's portfolio.");
+console.log("👋 Welcome to Urvi Mamidala's portfolio — AI/ML Engineer.");
 
 // Typing animation text options
 const texts = ["AI/ML Engineer", "Developer", "Problem Solver"];
